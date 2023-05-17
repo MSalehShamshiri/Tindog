@@ -1,2 +1,3 @@
-# Tindog
-My first responsive website using Bootstrap with Angela Yu
+Thank you Angela !
+
+Wanna find the soulmate of your dog? check the link in "About" section!
