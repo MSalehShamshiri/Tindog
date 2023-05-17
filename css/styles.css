@@ -1,0 +1,270 @@
+/* fonts */
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+/* html elements */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* headings */
+
+.big-1 {
+  font-size: 3.5rem;
+}
+
+.big-2 {
+  font-size: 3rem;
+}
+
+.big-3 {
+  font-size: 1.5rem;
+}
+
+/* title */
+
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+  padding: 5% 15%;
+}
+
+.title-h1 {
+  text-align: start;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+
+.navbar .container-fluid {
+  padding: 0 0% 5% 0;
+}
+
+button.btn.btn-lg {
+  margin: 6% 5% 0 0;
+}
+
+.nav-item {
+  padding: 0 6%;
+}
+
+/* .nav-link {
+  font-weight: lighter;
+} */
+
+.doggo-grid {
+  padding-right: 30%;
+}
+
+.doggo {
+  /* transform: translate(76px, 38px) rotate(25deg); */
+  width: 17.5rem;
+  transform: rotate(30deg);
+  position: absolute;
+}
+
+@media (max-width:991px) {
+  #title {
+    text-align: center;
+  }
+
+  button.btn.btn-lg {
+    margin: 5% 5%;
+  }
+
+  .doggo-grid {
+    padding: 0;
+    margin: 0;
+  }
+
+  .doggo {
+    position: static;
+    transform: rotate(0);
+    margin: 5%;
+  }
+
+
+}
+
+@media (min-width:993px) {
+  .doggo {
+    right: 17%;
+  }
+
+}
+
+/* .container-fluid.text-container.text-center>.row{
+  display: flex;
+  justify-content: space-between;
+} */
+
+/* .container-fluid.text-container.text-center>.row>.col-lg-4 {
+  padding: 4rem 4rem;
+} */
+
+/* features */
+
+#features {
+  padding: 10% 15%;
+  position: relative;
+  background-color: white;
+}
+
+.features-box {
+  padding: 5%;
+}
+
+.shapes {
+  color: #ef8172;
+  margin-bottom: 6%;
+}
+
+.shapes:hover {
+  color: #ff4c68;
+}
+
+
+
+/* testimonials */
+
+#testimonials {
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.testimonial-image {
+  width: 7rem;
+  border-radius: 100%;
+  margin: 5%;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 2rem;
+  height: 0.5rem;
+  padding: 0% 1%;
+  margin: 0% 1%;
+
+}
+
+/* #press, #testimonials {
+  border-width: 0;
+  border: none;
+} */
+
+/* press */
+
+#press {
+  background-color: #ef8172;
+  padding: 5% 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.press-logo {
+  width: 9rem;
+  margin: 5%;
+}
+
+/* Pricing */
+
+#pricing {
+  padding: 5% 3%;
+}
+
+#pricing>.row {
+  margin: 0%;
+}
+
+/* CTA */
+
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+  padding: 10% 15%;
+}
+
+#cta>.btn {
+  margin: 3% 3%;
+}
+
+/* footer */
+
+#footer {
+  padding: 5% 10%;
+}
+
+footer a {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-items {
+  color: #ef8172;
+  padding: 0;
+  margin: 1rem;
+}
+
+.footer-items:hover {
+  color: #ff4c68;
+}
+
+section footer div {
+  padding: 0 20%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width:447px) {
+  section footer div {
+    padding: 0 30%;
+  }
+}
+
+@media (min-width:661px) {
+  section footer div {
+    padding: 0 35%;
+  }
+}
+
+@media (min-width:877px) {
+  section footer div {
+    padding: 0 40%;
+  }
+}
+
+/* .copy-right {
+  margin: 1% 1%;
+  font-size: 0.8rem;
+} */
