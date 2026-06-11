@@ -1,0 +1,139 @@
+/* .gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  width: 100vw;
+  height: 29vh;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+.bfblur {
+  backdrop-filter: blur(11px);
+  background: #ffffff36;
+  border-radius: 0.7rem;
+}
+
+.gradient-background {
+  position: relative;
+  /* isolation: isolate; */
+  overflow: hidden;
+  /* height: fit-content; */
+}
+
+.gradient-background::before {
+  content: "";
+  position: absolute;
+  inset: -100%;
+  top: -2%;
+  left: -2%;
+  background:
+    radial-gradient(circle at left, #00bfff 10%, #ff4c67 40%, #ef8172 65%, rgb(129, 52, 253) 100%);
+  filter: blur(23px);
+  z-index: -2;
+  /* opacity: 0.9; */
+  animation: aurora 19s cubic-bezier(0.7, 0, 0.3, 1) infinite alternate;
+}
+
+@keyframes aurora {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  25% {
+    transform: translate(-47%, -3%);
+  }
+
+  50% {
+    transform: translate(-3%, -47%);
+  }
+
+  75% {
+    transform: translate(-47%, -47%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+.gradient-background::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(#0f172a00 20%, #212529);
+  inset: 0;
+  /* bottom: 0;
+  left: 50%;
+  transform: translate(-50%); */
+  /* background:
+    radial-gradient(circle at 50% 15%, #00bfff 11%, transparent 41%),
+    radial-gradient(circle at 85% 85%, #ff4c68 13%, transparent 43%),
+    radial-gradient(circle at 15% 85%, #ef8172 13%, transparent 43%);
+
+  filter: blur(90px); */
+  /* opacity: 0.9; */
+  /* animation: aurora-reverse 29s ease-in-out infinite alternate; */
+  z-index: -1;
+}
+
+/* @keyframes aurora-reverse {
+  0% {
+    transform: translate(0%, 0%) rotate(-45deg) scale(1);
+  }
+
+  50% {
+    transform: translate(29%, -23%) rotate(-170deg) scale(0.7);
+  }
+
+  100% {
+    transform: translate(-29%, -23%) rotate(60deg) scale(1.6);
+  }
+} */
+
+.inlogo {
+  display: inline;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.dogpng {
+  width: 18.5rem;
+}
+
+.spacer {
+  height: 6rem;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+#footer .gradient-background::before {
+  animation: aurora 19s cubic-bezier(0.7, 0, 0.3, 1) infinite alternate-reverse;
+}
+
+#footer .gradient-background::after {
+  background: linear-gradient(to top, #00000000 20%, #212529);
+}
+
+* {
+  /* outline: 1px solid green; */
+}
